@@ -23,9 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '17+fro1vh8rgs^sygd)2fp1k67kype=0rhwx0vr%q82x%f=5d%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [3.84.117.193]
+
+STATIC_ROOT = 'staticfiles'
+MEDIA_URL = '/'
 
 
 # Application definition
