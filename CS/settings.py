@@ -23,12 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '17+fro1vh8rgs^sygd)2fp1k67kype=0rhwx0vr%q82x%f=5d%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['3.84.117.193']
+ALLOWED_HOSTS = ['localhost','3.84.117.193']
 
-STATIC_ROOT = 'staticfiles'
-MEDIA_URL = '/'
 
 
 # Application definition
@@ -78,8 +76,12 @@ WSGI_APPLICATION = 'CS.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'aws-c-sevidor',
+        'USER': 'postgres',
+        'PASSWORD': 'alegithub04',
+        'HOST': 'aws-c-sevidor.cinponotx8x9.us-east-1.rds.amazonaws.com',
+        'PORT': '5432'
     }
 }
 
