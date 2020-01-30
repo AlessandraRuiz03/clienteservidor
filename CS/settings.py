@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'CS.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'aws-c-sevidor',
+        'NAME': 'ACS',
         'USER': 'postgres',
         'PASSWORD': 'alegithub04',
         'HOST': 'aws-c-sevidor.cinponotx8x9.us-east-1.rds.amazonaws.com',
