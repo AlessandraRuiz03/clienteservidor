@@ -14,3 +14,4 @@ class Example2(models.Model):
     
     class Meta:
         db_table = 'Example2'
+        
